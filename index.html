@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Single-page developer portfolio</title>
+  </head>
+  <body>
+    <div class="app" data-theme="dark">
+      <ul class="group12 header-links-list">
+        <li>
+          <a href="#">
+            <img src="./assets/images/icon-github.svg" alt="media-icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="./assets/images/icon-frontend-mentor.svg"
+              alt="media-icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./assets/images/icon-linkedin.svg" alt="media-icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./assets/images/icon-twitter.svg" alt="media-icon" />
+          </a>
+        </li>
+      </ul>
+      <div class="oval"></div>
+      <div class="design-line"></div>
+
+      <div class="group5 languages-container"></div>
+      <!-- <div class="design-line"></div> -->
+      <div class="group4 languages-grid">
+        <!-- <div class="group2 language-card">
+          <h1 class="language-h1">HTML</h1>
+          <p class="language-blurb">4 Years Experience</p>
+        </div> -->
+      </div>
+      <section class="group bio-section">
+        <!-- <div class="whole-div option">
+          <h1 class="whole-intro">Nice to meet you!</h1>
+          <h1>I'm <span class="name">Adam Keyes</span></h1>
+        </div> -->
+        <h1 class="intro-1">Nice to meet you!</h1>
+        <h1 class="intro-2">I'm</h1>
+        <h1 class="intro-3">Adam Keyes.</h1>
+        <p class="about-p">
+          Based in the UK, I'm a front-end developer passionate about building
+          accessible web apps that users love.
+        </p>
+      </section>
+      <button class="group3 contact-header-btn btn">Contact Me</button>
+      <div class="profile-img-div">
+        <picture>
+          <source
+            media="(min-width:650px)"
+            srcset="assets/images/image-profile-desktop.webp"
+          />
+          <source
+            media="(min-width:465px)"
+            srcset="assets/images/image-profile-tablet.webp"
+          />
+          <img
+            src="assets/images/image-profile-mobile.webp"
+            alt="profile-img"
+            class="profile-img"
+            style="width: auto"
+          />
+        </picture>
+      </div>
+      <div class="group26 middle-rings-svg">
+        <img src="./assets/images/pattern-rings.svg" alt="" />
+      </div>
+      <div class="group26 group26a top-rings-svg">
+        <img src="./assets/images/pattern-rings.svg" alt="" />
+      </div>
+
+      <div class="group11 footer-content-row">
+        <h2 class="footer-header">adam keyes</h2>
+        <ul class="group12 footer-links">
+          <li class="footer-link">
+            <img src="./assets/images/icon-github.svg" alt="media-link" />
+          </li>
+          <li class="footer-link">
+            <img
+              src="./assets/images/icon-frontend-mentor.svg"
+              alt="media-link"
+            />
+          </li>
+          <li class="footer-link">
+            <img src="./assets/images/icon-linkedin.svg" alt="media-link" />
+          </li>
+          <li class="footer-link">
+            <img src="./assets/images/icon-twitter.svg" alt="media-link" />
+          </li>
+        </ul>
+      </div>
+      <div class="rectangle line-div"></div>
+      <div class="group10 contact-card">
+        <div class="tint-overlay light-black-overlay"></div>
+        <div class="group8 hero-form-column">
+          <div class="group9 group-8-content-overlay form-parent">
+            <div class="group6copy2 textarea-div">
+              <textarea class="message-input" placeholder="Message"></textarea>
+            </div>
+            <button class="group3 send-btn">Send Message</button>
+          </div>
+          <div class="group6copy email-input-div reg-size-input-div">
+            <input
+              type="text"
+              name="email"
+              placeholder="Email"
+              class="form-input"
+            />
+          </div>
+          <div class="group6 name-input-div reg-size-input-div">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="form-input"
+            />
+          </div>
+        </div>
+        <div class="group16 hero-form-column">
+          <h1 class="h1-contact">Contact</h1>
+          <p class="contact-blurb">
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
+          </p>
+        </div>
+      </div>
+
+      <div class="group26 left-middle-svg">
+        <img src="./assets/images/pattern-rings.svg" alt="" />
+      </div>
+
+      <div class="group8 gallery-parent">
+        <div class="group3 contact-me-link-div">
+          <h2 class="contact-link-h2">Contact Me</h2>
+        </div>
+        <h1 class="projects-header">Projects</h1>
+
+        <div class="group7 gallery-card-grid"></div>
+      </div>
+    </div>
+
+    <template class="card-template">
+      <div class="group6 gallery-card">
+        <img class="app-img" src="#" alt="img" />
+        <div class="group3 card-info-div">
+          <h2 class="card-title"></h2>
+          <ul class="languages-list"></ul>
+        </div>
+      </div>
+    </template>
+
+    <template class="language-template">
+      <div class="group2 language-card">
+        <h1 class="language-h1">L</h1>
+        <p class="language-blurb"></p>
+      </div>
+    </template>
+
+    <!-- adamkeyes Nice to meet you! I'm Adam Keyes. Based in the UK, I'm a front-end
+    developer passionate about building accessible web apps that users love.
+    Contact me HTML 4 Years Experience CSS 4 Years Experience JavaScript 4 Years
+    Experience Accessibility 4 Years Experience React 3 Years Experience Sass 3
+    Years Experience Projects Contact me Design portfolio HTML CSS View project
+    View code E-learning landing page HTML CSS View project View code Todo web
+    app HTML CSS JavaScript View project View code Entertainment web app HTML
+    CSS JavaScript View project View code Memory Game HTML CSS JavaScript View
+    project View code Art gallery showcase HTML CSS JavaScript View project View
+    code Contact I would love to hear about your project and how I could help.
+    Please fill in the form, and I’ll get back to you as soon as possible. Name
+    Email Message Send message adamkeyes -->
+
+    <script>
+      var data = [
+        {
+          id: 1,
+          name: "Design Portfolio",
+          langs: ["HTML", "CSS"],
+          img: {
+            large: "./assets/images/thumbnail-project-1-large.webp",
+            small: "./assets/images/thumbnail-project-1-small.webp",
+          },
+        },
+        {
+          id: 2,
+          name: "E-Learning Landing Page",
+          langs: ["HTML", "CSS"],
+
+          img: {
+            large: "./assets/images/thumbnail-project-2-large.webp",
+            small: "./assets/images/thumbnail-project-2-small.webp",
+          },
+        },
+        {
+          id: 3,
+          name: "Todo Web App",
+          langs: ["HTML", "CSS", "Javascript"],
+
+          img: {
+            large: "./assets/images/thumbnail-project-3-large.webp",
+            small: "./assets/images/thumbnail-project-3-small.webp",
+          },
+        },
+        {
+          id: 4,
+          name: "Entertainment Web App",
+          langs: ["HTML", "CSS", "Javascript"],
+
+          img: {
+            large: "./assets/images/thumbnail-project-4-large.webp",
+            small: "./assets/images/thumbnail-project-4-small.webp",
+          },
+        },
+        {
+          id: 5,
+          name: "Memory Game",
+          langs: ["HTML", "CSS", "Javascript"],
+
+          img: {
+            large: "./assets/images/thumbnail-project-5-large.webp",
+            small: "./assets/images/thumbnail-project-5-small.webp",
+          },
+        },
+        {
+          id: 6,
+          name: "Art Gallery Showcase",
+          langs: ["HTML", "CSS", "Javascript"],
+
+          img: {
+            large: "./assets/images/thumbnail-project-6-large.webp",
+            small: "./assets/images/thumbnail-project-6-small.webp",
+          },
+        },
+      ];
+
+      data.forEach((d) => {
+        var cardEl = document
+          .querySelector(".card-template")
+          .content.cloneNode(true);
+        console.log(cardEl);
+        cardEl.querySelector(".app-img").setAttribute("src", d.img.large);
+        cardEl.querySelector(".card-title").innerHTML = d.name;
+        d.langs.forEach((l) => {
+          let li = document.createElement("li");
+          li.className = "lang-item";
+          li.innerHTML = l;
+          cardEl.querySelector(".languages-list").append(li);
+        });
+
+        document.querySelector(".gallery-card-grid").append(cardEl);
+      });
+
+      let langsData = [
+        { id: 1, name: "HTML", years: 4 },
+        { id: 2, name: "CSS", years: 4 },
+        { id: 3, name: "Javascript", years: 4 },
+        { id: 4, name: "Accessibility", years: 4 },
+        { id: 5, name: "React", years: 3 },
+        { id: 6, name: "Sass", years: 3 },
+      ];
+
+      langsData.forEach((d) => {
+        var cardEl = document
+          .querySelector(".language-template")
+          .content.cloneNode(true);
+        console.log(cardEl);
+        cardEl.querySelector(".language-h1").innerHTML = d.name;
+        cardEl.querySelector(
+          ".language-blurb"
+        ).innerHTML = `${d.years} Years Experience`;
+
+        document.querySelector(".languages-grid").append(cardEl);
+      });
+    </script>
+  </body>
+</html>
